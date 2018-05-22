@@ -18,11 +18,11 @@
     </classes>
 </test>
 
-<test name ="App Testing">
+<!-- <test name ="App Testing">
     <classes>
       <class name="Academy.End2EndProject.AppTest"/>
     </classes>
-</test>
+</test> -->
 
   
 </suite> <!-- Suite -->

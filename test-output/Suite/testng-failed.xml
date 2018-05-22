@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
     <listener class-name="Academy.End2EndProject.Listeners"/>
   </listeners>
@@ -9,10 +9,21 @@
       <class name="Academy.End2EndProject.HomePage">
         <methods>
           <include name="teardown"/>
-          <include name="basePageNavigation" invocation-numbers="0"/>
+          <include name="basePageNavigation"/>
           <include name="initialize"/>
         </methods>
       </class> <!-- Academy.End2EndProject.HomePage -->
     </classes>
   </test> <!-- Validating User Login(failed) -->
+  <test thread-count="5" name="Validating Title in the Page(failed)">
+    <classes>
+      <class name="Academy.End2EndProject.validateTitle">
+        <methods>
+          <include name="teardown"/>
+          <include name="basePageNavigation"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.End2EndProject.validateTitle -->
+    </classes>
+  </test> <!-- Validating Title in the Page(failed) -->
 </suite> <!-- Failed suite [Suite] -->
